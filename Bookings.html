@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Booking Website</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-image: url("images/mello.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .house img {
+            border-radius: 10px;
+        }
+
+        .form-control, .form-select {
+            border-radius: 10px;
+        }
+
+        footer a {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="py-4 text-center">
+    <h1>House Booking Website</h1>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">HouseBooking</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="List Property.html">List Property</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Available Houses -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Available Houses</h2>
+    <div class="row g-4">
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="images/bedsitter.jpg" class="card-img-top" alt="Bed Sitter">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Bed Sitter</h5>
+                    <p class="card-text">Located at ...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="images/one bedroom.jpg" class="card-img-top" alt="One Bedroom">
+                <div class="card-body text-center">
+                    <h5 class="card-title">One Bedroom</h5>
+                    <p class="card-text">Located at ...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="images/two bedroom.jpg" class="card-img-top" alt="Two Bedroom">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Two Bedroom</h5>
+                    <p class="card-text">Located at ...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <img src="images/mansion.jpg" class="card-img-top" alt="Mansion">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mansion</h5>
+                    <p class="card-text">Located at ...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Booking Form -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Book Your House</h2>
+    <form action="mailto:maluumichael01@gmail.com" method="POST" class="p-4 shadow-sm rounded" style="background-color: rgba(255, 255, 255, 0.8);">
+        <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="house" class="form-label">House</label>
+            <select id="house" name="house" class="form-select">
+                <option value="house1">Bed Sitter</option>
+                <option value="house2">One Bedroom</option>
+                <option value="house3">Two Bedroom</option>
+                <option value="house4">Mansion</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Special Requests</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." class="form-control" rows="5"></textarea>
+        </div>
+        <div class="d-grid">
+            <input type="submit" value="Submit" class="btn btn-success btn-lg">
+        </div>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="py-4 text-center">
+    <p>Michael Maluu Munyoki &copy; 2024 House Renting Service</p>
+    <p>Contact us at <a href="mailto:maluumichael01@gmail.com">maluumichael01@gmail.com</a></p>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="10">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Renting Service</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("images/mello.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+        #welcomeMessage {
+            color: #990b63;
+        }
+        .house img {
+            border-radius: 10px;
+        }
+        footer a {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1>House Renting Services</h1>
+        <p>Find Your Perfect Home</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">House Renting</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Bookings.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="List Property.html">List Property</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Welcome Message -->
+        <div id="welcomeMessage" class="text-center">
+            <h2>Welcome to House Renting Services!</h2>
+            <p>Your dream home awaits.</p>
+        </div>
+
+        <!-- Carousel -->
+        <h3 class="text-center my-4">Featured Properties</h3>
+        <div id="propertyCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 900px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/one bedroom.jpg" class="d-block w-100" alt="One Bedroom">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/two bedroom.jpg" class="d-block w-100" alt="Two Bedroom">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/mansion.jpg" class="d-block w-100" alt="Mansion">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Featured Houses -->
+        <h3 class="text-center my-4">Explore Our Top Picks</h3>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="images/one bedroom.jpg" class="card-img-top" alt="One Bedroom">
+                    <div class="card-body">
+                        <h5 class="card-title">One Bedroom</h5>
+                        <p class="card-text">Located in a serene environment with modern amenities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="images/two bedroom.jpg" class="card-img-top" alt="Two Bedroom">
+                    <div class="card-body">
+                        <h5 class="card-title">Two Bedroom</h5>
+                        <p class="card-text">Spacious and comfortable, ideal for families.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="images/mansion.jpg" class="card-img-top" alt="Mansion">
+                    <div class="card-body">
+                        <h5 class="card-title">Mansion</h5>
+                        <p class="card-text">Luxury living at its best with stunning views.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>Michael Maluu Munyoki &copy; 2024 House Renting Service</p>
+        <p>Contact us at <a href="mailto:maluumichael01@gmail.com">maluumichael01@gmail.com</a></p>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
